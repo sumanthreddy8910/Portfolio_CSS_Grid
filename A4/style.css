@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+nav ul li{
+    display: inline;
+    
+}
+nav ul {
+    list-style-type: none;
+    justify-content: space-between;
+    display: flex;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    margin-right: auto;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.resume {
+    display: flex;
+    margin: 20px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.left-column img {
+    max-width: 100%;
+    border-radius: 30%;
+}
+
+.right-column {
+    flex: 4;
+    padding: 20px;
+}
+.right-column h1{
+    font-family: cursive;
+}
+
+.education {
+    background-color: bisque ;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.education h2 {
+    color: #333;
+    text-align: center;
+}
+
+.education-box {
+    display: inline-grid;
+    grid-template-columns: 1fr;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.projects {
+    background-color: aquamarine;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+   
+}
+
+.interpersonalskills {
+    background-color: lightpink;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.Programmingskills {
+    background-color: #F08080;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+  
+}
+
+.contact {
+    background-color: skyblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+  
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    height: 10vh;
+}
+
+.contact a {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact img {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        padding: 5px;
+        margin: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0;
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    nav li a{
+        font-size: 15px;
+    }
+
+    .left-column img {
+        max-width: 50%; 
+        display: block; 
+        margin: 0 auto; 
+    }
+
+    .resume {
+        flex-direction: column;
+    }
+
+    .education,
+    .projects,
+    .interpersonalskills,
+    .Programmingskills,
+    .contact {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .education{
+        text-align: center;
+    }
+
+    .education-box {
+        display: inline-grid;
+        grid-template-columns: 1fr;
+        width: 250px;
+        padding: 20px;
+        text-align: center; 
+    }
+    .education-box h3{
+        font-size: 16px;
+    }
+    .education-box p{
+        font-size: 15px;
+    }
+    
+    .resume p{
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .resume a{
+        font-size: 15px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .resume h1{
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .projects h3{
+    font-size: 15px;
+    }
+    .projects p{
+        font-size: 10px;
+    }
+    .interpersonalskills li{
+        font-size: 15px;
+    }
+    .Programmingskills li{
+        font-size: 15px;
+    }
+    .education h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .projects h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .interpersonalskills h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .Programmingskills h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contact img {
+        width: 30px;
+        height: 30px;
+    }
+    .contact {
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        height: 5vh;
+    }
+
+}
